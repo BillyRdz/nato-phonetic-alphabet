@@ -97,7 +97,7 @@ app.get("/api", (req, res) => {
 
 app.get("/api/:name", (req, res) => {
   const name = req.params.name.toLowerCase();
-  let arr = name.split("").map((el) => `"${letters[el].name}"`);
+  let arr = name.split("").map((el) => `"${letters[el]}"`);
   console.log(arr);
   res.json(arr.join(" "));
 });
