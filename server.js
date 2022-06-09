@@ -8,83 +8,83 @@ app.use(cors());
 //prettier-ignore
 const letters = {
   "a": {
-    "name": "Alfa",
+    "name": "Alfa"
   }, 
   "b": {
-    "name": "Bravo",
+    "name": "Bravo"
   }, 
   "c": {
-    "name": "Charlie",
+    "name": "Charlie"
   }, 
   "d": {
-    "name": "Delta",
+    "name": "Delta"
   }, 
   "e": {
-    "name": "Echo",
+    "name": "Echo"
   }, 
   "f": {
-    "name": "Foxtrot",
+    "name": "Foxtrot"
   }, 
   "g": {
-    "name": "Golf",
+    "name": "Golf"
   }, 
   "h": {
-    "name": "Hotel",
+    "name": "Hotel"
   }, 
   "i": {
-    "name": "India",
+    "name": "India"
   }, 
   "j": {
-    "name": "Juliett",
+    "name": "Juliett"
   }, 
   "k": {
-    "name": "Kilo",
+    "name": "Kilo"
   }, 
   "l": {
-    "name": "Lima",
+    "name": "Lima"
   }, 
   "m": {
-    "name": "Mike",
+    "name": "Mike"
   }, 
   "n": {
-    "name": "November",
+    "name": "November"
   }, 
   "o": {
-    "name": "Oscar",
+    "name": "Oscar"
   }, 
   "p": {
-    "name": "Papa",
+    "name": "Papa"
   }, 
   "q": {
-    "name": "Quebec",
+    "name": "Quebec"
   }, 
   "r": {
-    "name": "Romeo",
+    "name": "Romeo"
   }, 
   "s": {
-    "name": "Sierra",
+    "name": "Sierra"
   }, 
   "t": {
-    "name": "Tango",
+    "name": "Tango"
   }, 
   "u": {
-    "name": "Uniform",
+    "name": "Uniform"
   }, 
   "v": {
-    "name": "Victor",
+    "name": "Victor"
   }, 
   "w": {
-    "name": "Whiskey",
+    "name": "Whiskey"
   }, 
   "x": {
-    "name": "X-ray",
+    "name": "X-ray"
   }, 
   "y": {
-    "name": "Yankee",
+    "name": "Yankee"
   }, 
   "z": {
-    "name": "Zulu",
-  },
+    "name": "Zulu"
+  }
 };
 
 app.get("/", (req, res) => {
@@ -99,7 +99,7 @@ app.get("/api/:name", (req, res) => {
   const name = req.params.name.toLowerCase();
   let arr = name.split("").map((el) => `"${letters[el].name}"`);
   console.log(arr);
-  res.send(arr.join(" "));
+  res.json(arr.join(" "));
 });
 
 app.listen(process.env.PORT || PORT, () => {
