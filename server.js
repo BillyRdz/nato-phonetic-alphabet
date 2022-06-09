@@ -5,86 +5,86 @@ const PORT = 8000;
 
 app.use(cors());
 
-// prettier-ignore
+//prettier-ignore
 const letters = {
-  'a': {
+  "a": {
     "name": "Alfa",
   }, 
-  'b': {
+  "b": {
     "name": "Bravo",
   }, 
-  'c': {
+  "c": {
     "name": "Charlie",
   }, 
-  'd': {
+  "d": {
     "name": "Delta",
   }, 
-  'e': {
+  "e": {
     "name": "Echo",
   }, 
-  'f': {
+  "f": {
     "name": "Foxtrot",
   }, 
-  'g': {
+  "g": {
     "name": "Golf",
   }, 
-  'h': {
+  "h": {
     "name": "Hotel",
   }, 
-  'i': {
+  "i": {
     "name": "India",
   }, 
-  'j': {
+  "j": {
     "name": "Juliett",
   }, 
-  'k': {
+  "k": {
     "name": "Kilo",
   }, 
-  'l': {
+  "l": {
     "name": "Lima",
   }, 
-  'm': {
+  "m": {
     "name": "Mike",
   }, 
-  'n': {
+  "n": {
     "name": "November",
   }, 
-  'o': {
+  "o": {
     "name": "Oscar",
   }, 
-  'p': {
+  "p": {
     "name": "Papa",
   }, 
-  'q': {
+  "q": {
     "name": "Quebec",
   }, 
-  'r': {
+  "r": {
     "name": "Romeo",
   }, 
-  's': {
+  "s": {
     "name": "Sierra",
   }, 
-  't': {
+  "t": {
     "name": "Tango",
   }, 
-  'u': {
+  "u": {
     "name": "Uniform",
   }, 
-  'v': {
+  "v": {
     "name": "Victor",
   }, 
-  'w': {
+  "w": {
     "name": "Whiskey",
   }, 
-  'x': {
+  "x": {
     "name": "X-ray",
   }, 
-  'y': {
+  "y": {
     "name": "Yankee",
   }, 
-  'z': {
+  "z": {
     "name": "Zulu",
-  }
+  },
 };
 
 app.get("/", (req, res) => {
