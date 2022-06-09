@@ -8,7 +8,7 @@ async function apiRequest() {
     );
     const data = await response.json();
 
-    console.log(data);
+    console.log(data, "from main.js");
     document.querySelector("h2").innerText = data.name;
   } catch (error) {
     console.log(error);
