@@ -99,7 +99,7 @@ app.get("/api/:name", (req, res) => {
   const name = req.params.name.toLowerCase();
   let arr = name.split("").map((el) => `${letters[el].name}`);
   console.log(arr);
-  res.send(arr.join("<br>"));
+  res.send(arr.join(" "));
 });
 
 app.listen(process.env.PORT || PORT, () => {
