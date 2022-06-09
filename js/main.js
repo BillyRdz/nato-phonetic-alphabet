@@ -11,6 +11,6 @@ async function apiRequest() {
     console.log(data);
     document.querySelector("h2").innerText = data.name;
   } catch (error) {
-    console.log(error);
+    console.log(error.json());
   }
 }
